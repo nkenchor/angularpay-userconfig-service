@@ -1,0 +1,26 @@
+server:
+  port: 20210
+
+spring:
+  application.name: userconfig-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: angularpay
+      username: service_account
+      password: service_account_password
+      authentication-database: angularpay
+
+angularpay:
+  pageSize: 50
+  codecSizeInMB: 50
+  maxUpdateRetry: 10
+  peerLookup:
+    ttlInMinutes: 5
+    maxSize: 1000
+    minSize: 100
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 10000
